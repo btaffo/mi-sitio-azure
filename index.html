@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web - Azure y AWS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf2f8;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .contenedor {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px #bbb;
+        }
+        h1 { color: #1673b1; }
+        button {
+            background: #1673b1;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>¡Mi sitio web funciona!</h1>
+        <p>Este sitio fue creado como trabajo práctico de computación en la nube.</p>
+        <p>Publicado en Azure App Service y Amazon S3.</p>
+        <button onclick="saludar()">Haz clic aquí</button>
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        function saludar() {
+            document.getElementById("mensaje").textContent =
+                "¡Hola! JavaScript está funcionando correctamente.";
+        }
+    </script>
+</body>
+</html>
